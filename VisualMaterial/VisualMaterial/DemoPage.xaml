@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisualMaterial.DemoPage"
+             Title="DemoPage"
+             BackgroundColor="White"
+              Visual="Material">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" 
+                     Padding="10">
+            <Label Text="Activiy Indicator" 
+               Margin="0,0,0,-10" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <ActivityIndicator Color="Orange" 
+                               BackgroundColor="Blue" 
+                               IsRunning="true" 
+                               HorizontalOptions="FillAndExpand" />
+
+            </StackLayout>
+            <Frame Padding="16" 
+                   HasShadow="true">
+                <StackLayout Spacing="16">
+                    <Stepper/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="16" 
+                   HasShadow="true">
+                <StackLayout Spacing="16">
+                    <Stepper/>
+                    <TimePicker Time="9:00:26"/>
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

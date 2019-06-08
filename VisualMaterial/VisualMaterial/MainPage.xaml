@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VisualMaterial"
+             x:Class="VisualMaterial.MainPage"
+             Title="VisualMaterial"
+             BackgroundColor="#38006b">
+
+    <ScrollView>
+        <FlexLayout Margin="20" Direction="Column" AlignContent="Center" JustifyContent="SpaceAround">
+            <Frame BorderColor="Orange" BackgroundColor="White" HorizontalOptions="Center">
+                <StackLayout>
+                    <Image Source="xamarinai.png" 
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Start"/>
+                    <Label Text="Iniciar Sesión" FontSize="25" TextColor="Black" HorizontalOptions="Center"/>
+                    <Entry Placeholder="Correo electrónico" BackgroundColor="#476CBF" Keyboard="Email" TextColor="White"  Visual="Material"/>
+                    <Entry Placeholder="Contraseña" BackgroundColor="#476CBF" IsPassword="true" TextColor="White"  Visual="Material" />
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" >
+                            <Switch />
+                            <Label Text="Recordarme"  HorizontalOptions="StartAndExpand" FontSize="10" />
+                        </StackLayout>
+                        <Label Text="Olvidé mi contraseña?" TextColor="#0069c0" HorizontalOptions="EndAndExpand" FontSize="10"  />
+                    </StackLayout>
+                    <Button Text="Iniciar Sesión" 
+                        TextColor="White"
+                        BackgroundColor="#2196f3"
+                        BorderRadius="15"
+                        BorderColor="White"
+                        WidthRequest="200"
+                        BorderWidth="9"
+                        HorizontalOptions="FillAndExpand"                                    
+                        Visual="Material" 
+                        Clicked="Button_Clicked"/>
+                    <Button Text="Regístrate" 
+                        TextColor="White"
+                        BackgroundColor="#4ebaaa" 
+                        BorderRadius="15"
+                        BorderColor="White"
+                        BorderWidth="9"
+                        WidthRequest="200"
+                        Visual="Material"
+                            Clicked="Button_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>
